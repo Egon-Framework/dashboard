@@ -1,0 +1,17 @@
+nav {
+    background: #181930;
+}
+
+img.navbar-logo {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+a.navbar-brand,
+a.navbar-brand:hover,
+a.navbar-brand:visited,
+a.navbar-brand:active {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
