@@ -1,57 +1,57 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    height: calc(100% - 60px);
-    background: #f9f9f9;
+  height: calc(100% - 60px);
+  background: #f9f9f9;
 }
 
 /** Top of Page Navigation Bar **/
 
 nav {
-    background: #181930;
+  background: #181930;
 }
 
 nav img.navbar-logo {
-    max-width: 30px;
-    max-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
 }
 
 nav a.navbar-brand,
 nav a.navbar-brand:hover,
 nav a.navbar-brand:visited,
 nav a.navbar-brand:active {
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
 nav button.btn {
-    padding: 2px 8px;
+  padding: 2px 8px;
 }
 
 nav button i {
-    font-size: large;
+  font-size: large;
 }
 
 /** Diagram Column **/
 
 #diagramColumn{
-    background-color: transparent;
-    background-image:
-            linear-gradient(0deg, transparent 9%,
-            lightgrey 10%, lightgrey 12%, transparent 13%, transparent 29%,
-            lightgrey 30%, lightgrey 31%, transparent 32%, transparent 49%,
-            lightgrey 50%, lightgrey 51%, transparent 52%, transparent 69%,
-            lightgrey 70%, lightgrey 71%, transparent 72%, transparent 89%,
-            lightgrey 90%, lightgrey 91%, transparent 92%, transparent),
-            linear-gradient(90deg, transparent 9%,
-            lightgrey 10%, lightgrey 12%, transparent 13%, transparent 29%,
-            lightgrey 30%, lightgrey 31%, transparent 32%, transparent 49%,
-            lightgrey 50%, lightgrey 51%, transparent 52%, transparent 69%,
-            lightgrey 70%, lightgrey 71%, transparent 72%, transparent 89%,
-            lightgrey 90%, lightgrey 91%, transparent 92%, transparent);
-    height:100%;
-    background-size:50px 50px;
+  background-color: transparent;
+  background-image:
+    linear-gradient(0deg, transparent 9%,
+      lightgrey 10%, lightgrey 12%, transparent 13%, transparent 29%,
+      lightgrey 30%, lightgrey 31%, transparent 32%, transparent 49%,
+      lightgrey 50%, lightgrey 51%, transparent 52%, transparent 69%,
+      lightgrey 70%, lightgrey 71%, transparent 72%, transparent 89%,
+      lightgrey 90%, lightgrey 91%, transparent 92%, transparent),
+    linear-gradient(90deg, transparent 9%,
+      lightgrey 10%, lightgrey 12%, transparent 13%, transparent 29%,
+      lightgrey 30%, lightgrey 31%, transparent 32%, transparent 49%,
+      lightgrey 50%, lightgrey 51%, transparent 52%, transparent 69%,
+      lightgrey 70%, lightgrey 71%, transparent 72%, transparent 89%,
+      lightgrey 90%, lightgrey 91%, transparent 92%, transparent);
+  height:100%;
+  background-size:50px 50px;
 }
