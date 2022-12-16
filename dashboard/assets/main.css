@@ -1,9 +1,15 @@
+:root {
+  --navbar-height: 56px;
+}
+
+/** General Page Layout and Formatting **/
+
 html {
   height: 100%;
 }
 
 body {
-  height: calc(100% - 60px);
+  height: calc(100% - var(--navbar-height));
   background: #f9f9f9;
 }
 
@@ -11,6 +17,9 @@ body {
 
 nav {
   background: #181930;
+  height: var(--navbar-height);
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 nav img.navbar-logo {
@@ -56,4 +65,15 @@ nav button i {
       lightgrey 90%, lightgrey 91%, transparent 92%, transparent);
   height: 100%;
   background-size: 50px 50px;
+}
+
+/** Sidebar Column **/
+
+#sidebarColumn {
+  min-width: 400px;
+  max-width: 500px;
+}
+
+#titleRow {
+  min-height: 225px;
 }
