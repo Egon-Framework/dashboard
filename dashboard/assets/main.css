@@ -48,18 +48,21 @@ nav button i {
 
 #diagramColumn {
   background-color: transparent;
-  background-image: linear-gradient(0deg, transparent 9%,
-  lightgrey 10%, lightgrey 12%, transparent 13%, transparent 29%,
-  lightgrey 30%, lightgrey 31%, transparent 32%, transparent 49%,
-  lightgrey 50%, lightgrey 51%, transparent 52%, transparent 69%,
-  lightgrey 70%, lightgrey 71%, transparent 72%, transparent 89%,
-  lightgrey 90%, lightgrey 91%, transparent 92%, transparent),
-  linear-gradient(90deg, transparent 9%,
-    lightgrey 10%, lightgrey 12%, transparent 13%, transparent 29%,
-    lightgrey 30%, lightgrey 31%, transparent 32%, transparent 49%,
-    lightgrey 50%, lightgrey 51%, transparent 52%, transparent 69%,
-    lightgrey 70%, lightgrey 71%, transparent 72%, transparent 89%,
-    lightgrey 90%, lightgrey 91%, transparent 92%, transparent);
+  background-image:
+    linear-gradient(
+      0deg, transparent 9%,
+      lightgrey 10%, lightgrey 12%, transparent 13%, transparent 29%,
+      lightgrey 30%, lightgrey 31%, transparent 32%, transparent 49%,
+      lightgrey 50%, lightgrey 51%, transparent 52%, transparent 69%,
+      lightgrey 70%, lightgrey 71%, transparent 72%, transparent 89%,
+      lightgrey 90%, lightgrey 91%, transparent 92%, transparent),
+    linear-gradient(
+      90deg, transparent 9%,
+      lightgrey 10%, lightgrey 12%, transparent 13%, transparent 29%,
+      lightgrey 30%, lightgrey 31%, transparent 32%, transparent 49%,
+      lightgrey 50%, lightgrey 51%, transparent 52%, transparent 69%,
+      lightgrey 70%, lightgrey 71%, transparent 72%, transparent 89%,
+      lightgrey 90%, lightgrey 91%, transparent 92%, transparent);
   height: 100%;
   background-size: 50px 50px;
 }
