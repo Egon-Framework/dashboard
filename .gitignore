@@ -1,1 +1,4 @@
 .idea
+
+dashboard/assets/vendored/node_modules
+dashboard/assets/vendored/package-lock.json
