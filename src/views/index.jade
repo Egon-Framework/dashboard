@@ -1,9 +1,6 @@
 extends layout
 
 block navbar
-  a.navbar-brand(href='#')
-    img.navbar-logo(src='assets/img/logo.svg', alt='')
-    | Egon Dashboard
   button.btn.btn-outline-primary(type='button', data-bs-toggle='collapse', data-bs-target='#sidebarColumn', aria-expanded='false', aria-controls='sidebarColumn')
     i.bi.bi-list
 
@@ -31,7 +28,7 @@ block content
         .row.pt-2.border-top
           .col.text-start
             small.text-muted
-              | v
+              | #{version}
               span.eg-dashboard-version
           .col.text-end
             a.text-muted(href='#licenseModal', data-bs-toggle='modal', data-bs-target='#licenseModal')
