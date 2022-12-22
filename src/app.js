@@ -22,6 +22,7 @@ app.use("/", indexRouter);
 app.use("/public", express.static(path.join(__dirname, "public")));
 app.use("/bootstrap", express.static(__dirname + "/node_modules/bootstrap/dist"));
 app.use("/bootstrap-icons", express.static(__dirname + "/node_modules/bootstrap-icons/font"));
+app.use("/jquery", express.static(__dirname + "/node_modules/jquery/dist"));
 
 // Configure globally availible values for use in templates
 app.locals.title = "Egon Dashboard";
