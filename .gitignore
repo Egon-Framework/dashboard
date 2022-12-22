@@ -1,4 +1,3 @@
 .idea
-
-dashboard/assets/vendored/node_modules
-dashboard/assets/vendored/package-lock.json
+node_modules
+package-lock.json

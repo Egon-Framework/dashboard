@@ -1,0 +1,51 @@
+extends layout
+
+block navbar
+  a.navbar-brand(href='#')
+    img.navbar-logo(src='assets/img/logo.svg', alt='')
+    | Egon Dashboard
+  button.btn.btn-outline-primary(type='button', data-bs-toggle='collapse', data-bs-target='#sidebarColumn', aria-expanded='false', aria-controls='sidebarColumn')
+    i.bi.bi-list
+
+block content
+  .container-fluid.h-100
+    .row.h-100
+      #diagramColumn.col
+      #sidebarColumn.col-3.collapse.collapse-horizontal.show
+        #titleRow.row.py-4
+          .col
+            h2.eg-pipeline-title
+            p.text-muted
+              | ID:
+              span.eg-pipeline-id
+            p.eg-pipeline-description
+        .row
+          ul.nav.nav-tabs(role='tablist')
+            li.nav-item(role='presentation')
+              button#general-tab.nav-link.active(data-bs-toggle='tab', data-bs-target='#general', type='button', role='tab', aria-controls='general', aria-selected='true') General
+            li.nav-item(role='presentation')
+              button#nodes-tab.nav-link(data-bs-toggle='tab', data-bs-target='#nodes', type='button', role='tab', aria-controls='nodes', aria-selected='false') Nodes
+          .tab-content
+            #general.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='general-tab')
+            #nodes.tab-pane.fade(role='tabpanel', aria-labelledby='nodes-tab')
+        .row.pt-2.border-top
+          .col.text-start
+            small.text-muted
+              | v
+              span.eg-dashboard-version
+          .col.text-end
+            a.text-muted(href='#licenseModal', data-bs-toggle='modal', data-bs-target='#licenseModal')
+              small Terms and Conditions
+  #licenseModal.modal.fade(tabindex='-1', aria-labelledby='licenseModalLabel', aria-hidden='true')
+    .modal-dialog.modal-lg.modal-dialog-scrollable
+      .modal-content
+        .modal-header
+          h5#licenseModalLabel.modal-title Terms and Conditions
+          button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+        .modal-body
+          p.eg-dashboard-terms
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-bs-dismiss='modal') Close
+
+block scripts
+  script(src='bootstrap/js/bootstrap.min.js')
