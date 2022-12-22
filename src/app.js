@@ -1,6 +1,7 @@
 const createError = require("http-errors");
 const express = require("express");
 const path = require("path");
+const pjson = require("./package.json");
 const logger = require("morgan");
 
 const indexRouter = require("./routes/index");
@@ -19,6 +20,10 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/bootstrap", express.static(__dirname + "/node_modules/bootstrap/dist"));
 app.use("/bootstrap-icons", express.static(__dirname + "/node_modules/bootstrap-icons/font"));
+
+// Configure globally availible values for use in templates
+app.locals.title = "Egon Dashboard";
+app.locals.version = pjson.version;
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
