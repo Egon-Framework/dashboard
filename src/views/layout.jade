@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title=title
+    link(rel='stylesheet', href='public/stylesheets/style.css')
+    link(rel='stylesheet', href='bootstrap/css/bootstrap.min.css')
+    link(rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css")
+  body
+    nav.navbar
+      .container-fluid
+        a.navbar-brand(href='#')
+          img.navbar-logo(src='assets/img/logo.svg', alt='')
+          | Egon Dashboard
+        block navbar
+          // Extra navbar content beyond the logo (menus, buttons, etc.)
+
+    block content
+      // Primary page content
+
+    script(src='jquery/jquery.min.js')
+    script(src='bootstrap/js/bootstrap.min.js')
+    block scripts
+      // Page specific javascript
