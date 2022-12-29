@@ -4,7 +4,7 @@ const app = require("../app");
 const http = require("http");
 
 // Get port from environment and store in Express.
-const port = process.env.PORT || "3000";
+const port = process.env.EGON_DASHBOARD_PORT || "3000";
 app.set("port", port);
 
 // Create an HTTP server listening on the provided port
