@@ -23,8 +23,8 @@ $(function () {
   $.ajax(dummyPipelineURL, {
     data: {
       pipeline: "57d92d7e-58c0-48ec-bed2-2e8b507161bb",
-      token: "123"
+      token: "123",
     },
-    success: populatePage
+    success: populatePage,
   });
 });
