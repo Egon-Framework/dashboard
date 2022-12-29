@@ -1,7 +1,7 @@
 const createError = require("http-errors");
 const express = require("express");
-const path = require("path");
 const logger = require("morgan");
+const path = require("path");
 
 const pjson = require("./package.json");
 const indexRouter = require("./routes/index");
