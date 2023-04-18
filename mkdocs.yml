@@ -1,0 +1,4 @@
+site_name: egon-dashboard
+theme: material
+nav:
+  - Overview: index.md
