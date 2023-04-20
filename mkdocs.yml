@@ -1,4 +1,4 @@
-site_name: egon-dashboard
+site_name: dashboard
 theme: material
 nav:
   - Overview: index.md
